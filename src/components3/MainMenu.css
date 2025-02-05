@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.MainMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #14240b;
+  padding: 20px;
+  margin: 0 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.talentsmenu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .talentsmenu {
+    grid-template-columns: repeat(2, 1fr); /* Отображение в две колонки на маленьких экранах */
+  }
+}
+
+.talentmenu {
+  background-color: #253d26;
+  border: 3px solid #99cf9a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.talentmenu:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.talentmenu img {
+  max-width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #99cf9a;
+}
+
+.talentmenu h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #acc329;
+}
+
+.talentmenu button {
+  background-color: #0d9453;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.talentmenu button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}

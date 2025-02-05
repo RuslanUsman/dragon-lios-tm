@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.dragon-web-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #1a1a1a; /* Темный фон */
+  color: #fff;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100px; /* Уменьшение размера изображения */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.header-image {
+  width: 50%;
+  height: auto;
+  border-radius: 50%; /* Закругление изображения */
+  box-shadow: 0 0 15px 15px rgba(26, 26, 26, 0.7); /* Эффект размытия */
+  margin: 0; /* Убираем отступы */
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 3em;
+  margin: 0;
+  animation: blink 2s infinite; /* Мигающая анимация */
+}
+
+.header h2 {
+  font-size: 2em;
+  margin: 10;
+  color: #459045;
+  animation: blink 2s infinite 1s; /* Мигающая анимация с задержкой */
+  transition: color 0.3s ease; /* Анимация изменения цвета */
+
+}
+
+.menu-button {
+  padding: 20px 40px; /* Увеличение размера кнопки */
+  font-size: 2em; /* Увеличение размера текста */
+  color: #fff;
+  background-color: #041e25;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: blink 2s infinite 2s, colorChange 2s infinite 2s; /* Мигающая анимация с задержкой и смена цвета */
+  margin-top: 40px; /* Увеличение отступа сверху */
+}
+
+.menu-button:hover {
+  background-color: #1e4f5e;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+
+.next-button {
+  margin-top: 40px;
+  padding: 20px 40px;
+  font-size: 2em;
+  color: #fff;
+  background-color: #1e4f5e;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: blink 2s infinite 1s; /* Мигающая анимация с задержкой */
+  transition: color 0.3s ease; /* Анимация изменения цвета */
+}
+
+.menu-button {
+  background-color: #0a5029;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: blink 2s infinite 2s, colorChange 2s infinite 2s; /* Мигающая анимация с задержкой и смена цвета */
+}

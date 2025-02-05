@@ -1,0 +1,41 @@
+/* src/components/WebApp.css */
+.webapp-container {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .webapp-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+  }
+  
+  .webapp-footer button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .webapp-footer button:hover {
+    background-color: #0056b3;
+  }
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  

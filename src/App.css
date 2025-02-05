@@ -1,0 +1,142 @@
+/* src/App.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #ff5722; /* Яркий оранжевый цвет */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ffccbc; /* Светло-оранжевый цвет */
+}
+
+main {
+  padding: 20px;
+  margin-bottom: 80px; /* Отступ снизу */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0; /* Уменьшенный размер подвала */
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.animated-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff5722; /* Яркий оранжевый цвет */
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 5px; /* Отступы кнопкам */
+}
+
+.animated-button:hover {
+  background-color: #e64a19; /* Темно-оранжевый цвет */
+  transform: scale(1.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ff5722; /* Яркий оранжевый цвет */
+}
+
+p {
+  color: #666;
+}
+
+a {
+  color: #ff5722; /* Яркий оранжевый цвет */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffccbc; /* Светло-оранжевый цвет */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff5722; /* Яркий оранжевый цвет */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e64a19; /* Темно-оранжевый цвет */
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-buttons {
+    flex-direction: row; /* Выровнять кнопки в один ряд */
+    gap: 10px;
+  }
+
+  .animated-button {
+    width: auto;
+    text-align: center;
+  }
+}

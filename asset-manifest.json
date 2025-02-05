@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dragon-lios-tm/static/css/main.4b57c8c8.css",
+    "main.js": "/dragon-lios-tm/static/js/main.bc65b747.js",
+    "index.html": "/dragon-lios-tm/index.html",
+    "main.4b57c8c8.css.map": "/dragon-lios-tm/static/css/main.4b57c8c8.css.map",
+    "main.bc65b747.js.map": "/dragon-lios-tm/static/js/main.bc65b747.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b57c8c8.css",
+    "static/js/main.bc65b747.js"
+  ]
+}
